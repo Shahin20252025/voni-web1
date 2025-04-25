@@ -1,1 +1,2 @@
-console.log('Voni app loaded.');
+
+console.log("Voni App is running.");
