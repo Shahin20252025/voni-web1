@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voni App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voni</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <img src="assets/logo.png" alt="Voni Logo" class="logo" />
     <h1>Welcome to Voni</h1>
-    <p>Your voice, your vibe, your music.</p>
-    <script src="script.js"></script>
+    <p>Your personalized emotional sound experience</p>
+  </header>
+
+  <main>
+    <section class="upload">
+      <h2>Upload Your Voice</h2>
+      <input type="file" accept="audio/*" id="audioInput" />
+      <button onclick="analyzeVoice()">Analyze & Create Music</button>
+    </section>
+
+    <section id="result">
+      <h2>Result</h2>
+      <p id="moodResult">No analysis yet.</p>
+      <audio controls id="musicPlayer" style="display: none;"></audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Voni. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
